@@ -1,4 +1,4 @@
-package Day1;
+ package Day1;
 
 public class HCFOFNumber {
 //TimeComplexity = O(min(a,b))
