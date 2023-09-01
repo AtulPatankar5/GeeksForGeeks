@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ListOFPrimeNumbers {
+	
+//	time complexity= n X sqrt(n)
 	static int count = 0;
 
 	public static boolean isPrime(int n) {
