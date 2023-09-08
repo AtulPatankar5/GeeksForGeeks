@@ -22,8 +22,8 @@ public class b_Second_Largest_Element {
 
 	public static void main(String[] args) {
 //		int[] arr = { 10, 5, 8, 20 };
-//		int[] arr = { 20, 10, 20, 8, 17 };
-		int[] arr = { 10, 10, 10 };
+		int[] arr = { 20, 10, 20, 8, 17 };
+//		int[] arr = { 10, 10, 10 };
 		findFirstandSecondMax(arr);
 	}
 
