@@ -8,7 +8,7 @@ public class f_SortString {
 		// Approach 1 : Insertion Sort
 		String str = "ROCK";
 		char[] arr = str.toCharArray();
-		for (int i = 0; i < arr.length; i++) {
+		for (int i = 1; i < arr.length; i++) {
 			char index = arr[i];
 			for (int j = i - 1; j >= 0; j--) {
 				if (arr[j] > index) {
