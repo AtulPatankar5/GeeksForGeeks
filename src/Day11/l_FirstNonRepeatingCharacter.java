@@ -1,8 +1,13 @@
 package Day11;
 
-import java.util.HashMap;
+import java.util.ArrayDeque;
 import java.util.LinkedHashMap;
+import java.util.LinkedList;
 import java.util.Map;
+import java.util.Queue;
+import java.util.concurrent.LinkedBlockingDeque;
+
+
 
 public class l_FirstNonRepeatingCharacter {
 
@@ -17,8 +22,9 @@ public class l_FirstNonRepeatingCharacter {
 				int count = map.get(arr[i]);
 				map.put(arr[i], count + 1);
 			}
-
 		}
+		
+		Queue<Integer > q= new ArrayDeque<>();
 		for (int i = 0; i < arr.length; i++) {
 			int val = map.get(arr[i]);
 			if (val == 1) {
