@@ -25,9 +25,9 @@ public class g_MoveZerostoEnd {
 	}
 
 	public static void main(String[] args) {
-//		int arr[] = { 10, 0, 0, 20, 0, 0, 30, 0 };
+		int arr[] = { 10, 0, 0, 20, 0, 0, 30, 0 };
 //		int []arr= {0,0,0,0,10,20,30};
-		int[] arr = { 10, 20, 30, 0, 0 };
+//		int[] arr = { 10, 20, 30, 0, 0 };
 		moveZeros(arr);
 		for (int i = 0; i < arr.length; i++) {
 			System.out.print(arr[i] + " ");

@@ -1,6 +1,8 @@
 package Day6;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public class c_leaderofNumber {
@@ -21,7 +23,9 @@ public class c_leaderofNumber {
 //		return list;
 //	}
 
-	public static List<Integer> leader(int[] arr) {
+//	public static List<Integer> leader(int[] arr) {
+	public static int[] leader(int[] arr) {
+
 		List<Integer> list = new ArrayList<>();
 		int leader = arr[arr.length - 1];
 		list.add(leader);
@@ -32,7 +36,14 @@ public class c_leaderofNumber {
 				leader = arr[i];
 			}
 		}
-		return list;
+		int sizeofNewArray = list.size();
+		int arr2[] = new int[sizeofNewArray];
+		for (int i = sizeofNewArray-1; i >=0; i--) {
+			arr2[i] = list.get(i);
+		}
+
+//		Collections.sort(list,(a,b)->b.compareTo(a));
+		return arr2;
 	}
 
 	public static void main(String[] args) {
@@ -40,8 +51,10 @@ public class c_leaderofNumber {
 		int[] arr = { 7, 10, 4, 3, 6, 5, 2 };
 //		int [] arr= {2};
 //		int[] arr = { 30, 20, 10 };
-		List<Integer> list = leader(arr);
-		System.out.println(list);
+//		List<Integer> list = leader(arr);
+		int[] newArray = leader(arr);
+//		System.out.println(list);
+		System.out.println(Arrays.toString(newArray));
 	}
 
 }
